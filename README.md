@@ -26,10 +26,11 @@
 
 <br/>
 
-| Boot Screen | Hero + Terminal |
+| Boot Screen |
 |:---:|:---:|
-| [![Boot](img/image3.png)](https://portfolio-cyberpunk-phi.vercel.app) | [![Hero](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app) |
-
+| [![Boot](img/image2.png)](https://portfolio-cyberpunk-phi.vercel.app) | 
+| Hero + Terminal |
+| [![Hero](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app) |
 *⬆ Clic en las imágenes para ver el portfolio en vivo*
 
 </div>

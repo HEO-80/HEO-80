@@ -1,5 +1,10 @@
 <div align="center">
 
+<a href="https://portfolio-cyberpunk-phi.vercel.app">
+  <img src="img/boot-heo80-repeat.svg" alt="NETWATCH Boot" width="1080"/>
+</a>
+
+
 <pre>
 ██╗  ██╗███████╗ ██████╗        █████╗  ██████╗ 
 ██║  ██║██╔════╝██╔═══██╗      ██╔══██╗██╔═████╗
@@ -28,9 +33,6 @@
 
 <div align="center">
 
-<a href="https://portfolio-cyberpunk-phi.vercel.app">
-  <img src="img/boot-heo80-repeat.svg" alt="NETWATCH Boot" width="1080"/>
-</a>
 
 
 [![Hero + Terminal](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app)

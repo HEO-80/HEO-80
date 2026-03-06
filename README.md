@@ -32,7 +32,7 @@
 
 [![Hero + Terminal](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app)
 
-<img src="img/terminal-heo80-repeat.svg" alt="NETWATCH Terminal" width="720"/>
+<img src="img/terminal-heo80-repeat.svg" alt="NETWATCH Terminal" width="900"/>
 
 <sub>⬆ Clic en las imágenes para ver el portfolio en vivo</sub>
 

@@ -29,7 +29,7 @@
 <div align="center">
 
 [![Boot Screen](img/boot-heo80-repeat.svg)](https://portfolio-cyberpunk-phi.vercel.app)
-
+<img src="img/boot-heo80-repeat.svg" alt="NETWATCH Boot" width="1080"/>
 [![Hero + Terminal](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app)
 
 <img src="img/terminal-heo80-repeat.svg" alt="NETWATCH Terminal" width="1080"/>

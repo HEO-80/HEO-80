@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400">
+  <defs>
+    <style>
+      .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .t-yellow { fill: #ffcc00; }
+      .t-cyan   { fill: #00ffff; }
+      .t-green  { fill: #00ff41; }
+      .t-dim    { fill: #3a4a3a; }
+      .t-white  { fill: #c8c8d0; }
+      .t-red    { fill: #ff3030; }
+    </style>
+    <pattern id="scanlines" x="0" y="0" width="720" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="720" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <!-- Glow filter for HEO-80 -->
+    <filter id="glow-yellow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Total cycle = 12s -->
+
+  <!-- Background -->
+  <rect width="720" height="400" fill="#060608"/>
+
+  <!-- Grid -->
+  <g stroke="#0d1f0d" stroke-width="1">
+    <line x1="0" y1="48"  x2="720" y2="48"/>
+    <line x1="0" y1="96"  x2="720" y2="96"/>
+    <line x1="0" y1="144" x2="720" y2="144"/>
+    <line x1="0" y1="192" x2="720" y2="192"/>
+    <line x1="0" y1="240" x2="720" y2="240"/>
+    <line x1="0" y1="288" x2="720" y2="288"/>
+    <line x1="0" y1="336" x2="720" y2="336"/>
+    <line x1="0" y1="384" x2="720" y2="384"/>
+    <line x1="90"  y1="0" x2="90"  y2="400"/>
+    <line x1="180" y1="0" x2="180" y2="400"/>
+    <line x1="270" y1="0" x2="270" y2="400"/>
+    <line x1="360" y1="0" x2="360" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+    <line x1="540" y1="0" x2="540" y2="400"/>
+    <line x1="630" y1="0" x2="630" y2="400"/>
+  </g>
+
+  <rect width="720" height="400" fill="url(#scanlines)" opacity="0.5"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="718" height="398" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="1,1 22,1 22,10" fill="none" stroke="#00ffff" stroke-width="2"/>
+  <polyline points="719,1 698,1 698,10" fill="none" stroke="#00ffff" stroke-width="2"/>
+  <polyline points="1,399 22,399 22,390" fill="none" stroke="#00ffff" stroke-width="2"/>
+  <polyline points="719,399 698,399 698,390" fill="none" stroke="#00ffff" stroke-width="2"/>
+
+  <!-- Bottom status bar -->
+  <rect x="1" y="374" width="718" height="25" fill="rgba(0,255,255,0.04)"/>
+  <line x1="1" y1="374" x2="719" y2="374" stroke="#00ffff" stroke-width="0.8" opacity="0.3"/>
+  <text x="18" y="390" class="mono t-cyan" font-size="11">SYSTEM STATUS:</text>
+  <text x="148" y="390" class="mono t-green" font-size="11">ONLINE</text>
+  <circle cx="200" cy="386" r="4" fill="#00ff41">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="690" y="390" text-anchor="end" class="mono t-yellow" font-size="11">2077</text>
+
+  <!-- ══════════════════════════════════
+       [ HEO-80 ] — glitchy title
+  ══════════════════════════════════ -->
+
+  <!-- Bracket left -->
+  <text x="108" y="115" class="mono t-cyan" font-size="52" font-weight="bold" filter="url(#glow-cyan)">[</text>
+  <!-- Bracket right -->
+  <text x="612" y="115" class="mono t-cyan" font-size="52" font-weight="bold" filter="url(#glow-cyan)">]</text>
+
+  <!-- HEO-80 main text -->
+  <text x="360" y="115" text-anchor="middle" class="mono t-yellow" font-size="52" font-weight="bold"
+    filter="url(#glow-yellow)" letter-spacing="6">HEO-80
+    <!-- flicker animation -->
+    <animate attributeName="opacity"
+      values="1;1;1;1;0.85;1;1;0.7;1;1;1;0.9;1;1;1;0.6;1;1;1;1;0.8;1;1;0.4;1;1"
+      dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.08;0.16;0.24;0.25;0.26;0.34;0.35;0.36;0.44;0.52;0.53;0.54;0.6;0.68;0.69;0.70;0.76;0.80;0.84;0.85;0.86;0.92;0.93;0.94;1"/>
+  </text>
+
+  <!-- Glitch offset layer magenta -->
+  <text x="363" y="115" text-anchor="middle" class="mono" font-size="52" font-weight="bold"
+    fill="#ff00ff" letter-spacing="6" opacity="0">HEO-80
+    <animate attributeName="opacity"
+      values="0;0;0;0.3;0;0;0.2;0;0;0;0.15;0;0;0;0.25;0;0;0;0;0;0.1;0;0;0.3;0;0"
+      dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.08;0.24;0.25;0.26;0.34;0.35;0.36;0.44;0.52;0.53;0.54;0.6;0.68;0.69;0.70;0.76;0.80;0.84;0.85;0.86;0.92;0.93;0.94;0.97;1"/>
+  </text>
+
+  <!-- Glitch offset layer cyan -->
+  <text x="357" y="117" text-anchor="middle" class="mono" font-size="52" font-weight="bold"
+    fill="#00ffff" letter-spacing="6" opacity="0">HEO-80
+    <animate attributeName="opacity"
+      values="0;0;0.2;0;0;0.15;0;0;0;0.1;0;0;0;0.2;0;0;0;0;0;0.08;0;0;0.15;0;0;0"
+      dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.08;0.25;0.26;0.34;0.35;0.36;0.44;0.52;0.53;0.54;0.6;0.68;0.69;0.70;0.76;0.80;0.84;0.85;0.86;0.92;0.93;0.94;0.97;0.99;1"/>
+  </text>
+
+  <!-- ══════════════════════════════════
+       LOG LINES — appear one by one
+  ══════════════════════════════════ -->
+
+  <!-- Line 1 — t=1.2s (0.10) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.099;0.10;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="165" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="165" class="mono t-white" font-size="13">Iniciando NETWATCH OS v2.077...</text>
+  </g>
+
+  <!-- Line 2 — t=1.9s (0.158) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.157;0.158;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="185" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="185" class="mono t-white" font-size="13">Cargando módulos del sistema...</text>
+  </g>
+
+  <!-- Line 3 — t=2.6s (0.216) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.215;0.216;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="205" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="205" class="mono t-green" font-size="13">[OK]</text>
+    <text x="140" y="205" class="mono t-white" font-size="13">Blockchain interface loaded</text>
+  </g>
+
+  <!-- Line 4 — t=3.2s (0.266) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.265;0.266;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="225" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="225" class="mono t-green" font-size="13">[OK]</text>
+    <text x="140" y="225" class="mono t-white" font-size="13">DeFi protocols connected</text>
+  </g>
+
+  <!-- Line 5 — t=3.8s (0.316) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.315;0.316;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="245" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="245" class="mono t-green" font-size="13">[OK]</text>
+    <text x="140" y="245" class="mono t-white" font-size="13">Smart contract engine ready</text>
+  </g>
+
+  <!-- Line 6 — t=4.4s (0.366) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.365;0.366;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="265" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="265" class="mono t-green" font-size="13">[OK]</text>
+    <text x="140" y="265" class="mono t-white" font-size="13">MEV radar initialized</text>
+  </g>
+
+  <!-- Line 7 — t=5.0s (0.416) -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.415;0.416;0.70;0.82;0.90;0.95;1"/>
+    <text x="80" y="285" class="mono t-cyan" font-size="13">&gt;</text>
+    <text x="98" y="285" class="mono t-yellow" font-size="13">Verificando identidad del operativo...</text>
+  </g>
+
+  <!-- ══════════════════════════════════
+       PROGRESS BAR — t=5.5s to 7.5s
+  ══════════════════════════════════ -->
+
+  <!-- Bar track -->
+  <rect x="80" y="308" width="560" height="5" fill="#111" rx="2">
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.457;0.458;0.70;0.82;0.90;0.95;1"/>
+  </rect>
+  <!-- Bar fill -->
+  <rect x="80" y="308" width="0" height="5" fill="#ffcc00" rx="2" filter="url(#glow-yellow)">
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.457;0.458;0.70;0.82;0.90;0.95;1"/>
+    <animate attributeName="width" values="0;0;0;560;560;560;560;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.457;0.458;0.625;0.70;0.82;0.95;1"/>
+  </rect>
+  <!-- Bar % text -->
+  <text x="360" y="325" text-anchor="middle" class="mono t-yellow" font-size="11">
+    <animate attributeName="opacity" values="0;0;1;1;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.457;0.458;0.70;0.82;0.90;0.95;1"/>
+    CARGANDO SISTEMA...
+  </text>
+
+  <!-- ══════════════════════════════════
+       PRESS ANY KEY — t=7.5s (0.625)
+  ══════════════════════════════════ -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;1;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.624;0.625;0.641;0.657;0.674;0.690;0.707;0.724;0.82;0.90;1"/>
+
+    <!-- Triangle -->
+    <polygon points="80,345 92,351 80,357" fill="#00ffff" filter="url(#glow-cyan)"/>
+    <text x="102" y="356" class="mono t-cyan" font-size="13" letter-spacing="3">PRESS ANY KEY TO INITIALIZE</text>
+  </g>
+
+  <!-- ══════════════════════════════════
+       FADE OUT + RESTART FLASH
+  ══════════════════════════════════ -->
+
+  <!-- White flash on transition -->
+  <rect x="0" y="0" width="720" height="400" fill="#00ffff">
+    <animate attributeName="opacity" values="0;0;0;0.3;0;0;0;0;0;0;0;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.87;0.88;0.89;0.90;0.92;0.94;0.95;0.97;0.98;0.99;1"/>
+  </rect>
+
+  <!-- Black fade for reset -->
+  <rect x="0" y="0" width="720" height="400" fill="#060608">
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0" dur="12s" repeatCount="indefinite"
+      keyTimes="0;0.90;0.92;0.94;0.96;0.99;1"/>
+  </rect>
+
+</svg>

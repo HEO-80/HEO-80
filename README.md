@@ -31,6 +31,11 @@
 | [![Boot](img/image3.png)](https://portfolio-cyberpunk-phi.vercel.app) | 
 | Hero + Terminal |
 | [![Hero](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app) |
+
+        <div align="center">
+          <img src="img/terminal-heo80.svg" alt="NETWATCH Terminal" width="720"/>
+        </div>
+        
 *⬆ Clic en las imágenes para ver el portfolio en vivo*
 
 </div>

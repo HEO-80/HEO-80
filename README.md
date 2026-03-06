@@ -22,7 +22,15 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hectorob/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/HEO-80)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://landing-page-react-hector.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FFCC00?style=flat-square&logo=vercel&logoColor=black)](https://portfolio-cyberpunk-phi.vercel.app)
+
+<br/>
+
+| Boot Screen | Hero + Terminal |
+|:---:|:---:|
+| [![Boot](img/image3.png)](https://portfolio-cyberpunk-phi.vercel.app) | [![Hero](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app) |
+
+*⬆ Clic en las imágenes para ver el portfolio en vivo*
 
 </div>
 

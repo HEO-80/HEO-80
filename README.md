@@ -28,17 +28,22 @@
 
 <div align="center">
 
-[![Boot Screen](img/boot-heo80-repeat.svg)](https://portfolio-cyberpunk-phi.vercel.app)
-<img src="img/boot-heo80-repeat.svg" alt="NETWATCH Boot" width="1080"/>
+<a href="https://portfolio-cyberpunk-phi.vercel.app">
+  <img src="img/boot-heo80-repeat.svg" alt="NETWATCH Boot" width="1080"/>
+</a>
+
+
 [![Hero + Terminal](img/image.png)](https://portfolio-cyberpunk-phi.vercel.app)
 
-<img src="img/terminal-heo80-repeat.svg" alt="NETWATCH Terminal" width="1080"/>
+<a href="https://portfolio-cyberpunk-phi.vercel.app">
+  <img src="img/terminal-heo80-repeat.svg" alt="NETWATCH Terminal" width="1080"/>
+</a>
 
 <sub>⬆ Clic en las imágenes para ver el portfolio en vivo</sub>
 
 </div>
 
-*⬆ Clic en las imágenes para ver el portfolio en vivo*
+
 
 </div>
 
